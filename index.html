@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RT 15 / RW 03 – Informasi, Layanan & Kegiatan Warga</title>
+  <meta name="description" content="Website resmi RT 15 / RW 03: jadwal Posyandu, Posbindu, Dasawisma, Karang Taruna, berita, galeri, dan laporan warga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="#beranda" class="brand">
+      <span class="brand__mark">15</span>
+      <span class="brand__txt"><strong>RT 15 / RW 03</strong><small data-set="wilayah">Informasi Warga</small></span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+    <nav class="nav__menu" id="navMenu" aria-label="Menu utama">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#karang-taruna">Karang Taruna</a>
+      <a href="#data-warga">Data Warga</a>
+      <a href="#berita">Berita</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#lapor" class="btn btn--coral btn--sm">Lapor Warga</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===================== BERANDA / HERO ===================== -->
+<section class="hero" id="beranda">
+  <span class="blob blob--sun" aria-hidden="true"></span>
+  <span class="blob blob--coral" aria-hidden="true"></span>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="hero__kicker">Selamat datang, warga</p>
+      <h1>RT 15 / RW 03</h1>
+      <p class="hero__lead">Cek jadwal Posyandu dan Posbindu, baca kabar lingkungan, dan sampaikan laporan Anda langsung ke pengurus RT.</p>
+      <div class="hero__cta">
+        <a href="#layanan" class="btn btn--sun">Lihat layanan</a>
+        <a href="#lapor" class="btn btn--ghost">Buat laporan</a>
+      </div>
+      <div class="sched">
+        <div class="sched__item sched__item--teal">
+          <span class="sched__ico" aria-hidden="true">👶</span>
+          <div><strong>Posyandu balita</strong><span id="nextPosyandu">Memuat jadwal…</span></div>
+        </div>
+        <div class="sched__item sched__item--sky">
+          <span class="sched__ico" aria-hidden="true">🧓</span>
+          <div><strong>Posbindu lansia</strong><span id="nextPosbindu">Memuat jadwal…</span></div>
+        </div>
+      </div>
+    </div>
+    <figure class="hero__img slot">
+      <!-- 📷 TARUH GAMBAR HERO di: public/img/hero.jpg  (disarankan 1200×900 px) -->
+      <img src="/img/hero.jpg" alt="Suasana lingkungan RT 15 RW 03" data-slot="img/hero.jpg">
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== TENTANG ===================== -->
+<section class="sec sec--white" id="tentang">
+  <div class="wrap">
+    <h2 class="sec__title">Tentang RT 15 / RW 03</h2>
+    <div class="about">
+      <div class="about__text">
+        <p id="tentangText">Memuat…</p>
+      </div>
+      <figure class="slot slot--round">
+        <!-- 📷 TARUH GAMBAR di: public/img/tentang.jpg  (lingkungan / pengurus RT) -->
+        <img src="/img/tentang.jpg" alt="Lingkungan RT 15 RW 03" data-slot="img/tentang.jpg" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="vm">
+      <article class="vm__card vm__card--visi">
+        <h3>Visi</h3>
+        <p id="visiText">Memuat…</p>
+      </article>
+      <article class="vm__card vm__card--misi">
+        <h3>Misi</h3>
+        <ul id="misiList"></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAYANAN & KEGIATAN ===================== -->
+<section class="sec sec--sun" id="layanan">
+  <div class="wrap">
+    <h2 class="sec__title">Layanan & kegiatan RT</h2>
+    <p class="sec__sub">Tiga program rutin untuk kesehatan dan kebersamaan keluarga di lingkungan kita.</p>
+
+    <!-- Dasawisma -->
+    <article class="prog prog--coral" id="dasawisma">
+      <figure class="prog__img slot">
+        <!-- 📷 TARUH GAMBAR DASAWISMA di: public/img/dasawisma.jpg  (disarankan 800×600 px) -->
+        <img src="/img/dasawisma.jpg" alt="Kegiatan Dasawisma" data-slot="img/dasawisma.jpg" loading="lazy">
+      </figure>
+      <div class="prog__body">
+        <h3>Dasawisma</h3>
+        <p class="prog__when">Kelompok ibu-ibu, pertemuan berkala</p>
+        <p>Kelompok warga yang terdiri dari 10–20 kepala keluarga untuk saling membantu: pendataan keluarga, penyuluhan, kebersihan lingkungan, hingga kegiatan PKK.</p>
+        <ul class="ticks">
+          <li>Pendataan keluarga dan kondisi lingkungan</li>
+          <li>Penyuluhan kesehatan, gizi, dan kebersihan</li>
+          <li>Pemanfaatan pekarangan dan kegiatan PKK</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Posyandu -->
+    <article class="prog prog--teal prog--rev" id="posyandu">
+      <figure class="prog__img slot">
+        <!-- 📷 TARUH GAMBAR POSYANDU di: public/img/posyandu.jpg  (disarankan 800×600 px) -->
+        <img src="/img/posyandu.jpg" alt="Kegiatan Posyandu balita" data-slot="img/posyandu.jpg" loading="lazy">
+      </figure>
+      <div class="prog__body">
+        <h3>Posyandu <small>untuk balita</small></h3>
+        <p class="prog__when">Setiap Senin minggu ke-2</p>
+        <p>Pemeriksaan rutin tumbuh kembang anak usia 0–5 tahun. Bawa buku KIA agar catatan kesehatan anak selalu terbarui.</p>
+        <ul class="ticks">
+          <li>Penimbangan berat dan pengukuran tinggi badan</li>
+          <li>Imunisasi dan pemberian vitamin A</li>
+          <li>Pemberian makanan tambahan dan konsultasi gizi</li>
+        </ul>
+        <p class="prog__next">Jadwal berikutnya: <strong id="nextPosyandu2">…</strong></p>
+      </div>
+    </article>
+
+    <!-- Posbindu -->
+    <article class="prog prog--sky" id="posbindu">
+      <figure class="prog__img slot">
+        <!-- 📷 TARUH GAMBAR POSBINDU di: public/img/posbindu.jpg  (disarankan 800×600 px) -->
+        <img src="/img/posbindu.jpg" alt="Kegiatan Posbindu lansia" data-slot="img/posbindu.jpg" loading="lazy">
+      </figure>
+      <div class="prog__body">
+        <h3>Posbindu <small>untuk lansia</small></h3>
+        <p class="prog__when">Setiap Rabu minggu ke-3</p>
+        <p>Pos pembinaan terpadu untuk memantau kesehatan lansia dan mencegah penyakit tidak menular sejak dini.</p>
+        <ul class="ticks">
+          <li>Cek tekanan darah, gula darah, dan kolesterol</li>
+          <li>Senam lansia dan konsultasi kesehatan</li>
+          <li>Penyuluhan pola hidup sehat</li>
+        </ul>
+        <p class="prog__next">Jadwal berikutnya: <strong id="nextPosbindu2">…</strong></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== KARANG TARUNA ===================== -->
+<section class="sec sec--leaf" id="karang-taruna">
+  <div class="wrap">
+    <div class="kt">
+      <div class="kt__text">
+        <h2 class="sec__title sec__title--left">Karang Taruna</h2>
+        <p>RT 15 bekerja sama dengan Karang Taruna untuk menggerakkan generasi muda: membantu kegiatan Posyandu dan Posbindu, kerja bakti, lomba 17 Agustus, hingga acara sosial warga.</p>
+      </div>
+      <figure class="slot slot--round">
+        <!-- 📷 TARUH GAMBAR KARANG TARUNA di: public/img/karang-taruna.jpg  (foto kegiatan / foto bersama) -->
+        <img src="/img/karang-taruna.jpg" alt="Kegiatan Karang Taruna RT 15" data-slot="img/karang-taruna.jpg" loading="lazy">
+      </figure>
+    </div>
+
+    <h3 class="kt__sub">Pengurus & anggota</h3>
+    <div class="members" id="members" aria-live="polite"><p class="muted">Memuat anggota…</p></div>
+  </div>
+</section>
+
+<!-- ===================== DATA WARGA ===================== -->
+<section class="sec sec--ink" id="data-warga">
+  <div class="wrap">
+    <h2 class="sec__title">Data warga</h2>
+    <div class="stats">
+      <div class="stat stat--sky"><span class="stat__ico" aria-hidden="true">♂</span><strong class="count" id="stLaki">0</strong><span>Laki-laki</span></div>
+      <div class="stat stat--coral"><span class="stat__ico" aria-hidden="true">♀</span><strong class="count" id="stPerempuan">0</strong><span>Perempuan</span></div>
+      <div class="stat stat--sun"><span class="stat__ico" aria-hidden="true">👥</span><strong class="count" id="stTotal">0</strong><span>Total warga</span></div>
+      <div class="stat stat--leaf"><span class="stat__ico" aria-hidden="true">🏠</span><strong class="count" id="stKeluarga">0</strong><span>Keluarga</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BERITA ===================== -->
+<section class="sec sec--lilac" id="berita">
+  <div class="wrap">
+    <h2 class="sec__title">Berita terkini</h2>
+    <div class="cards" id="newsList" aria-live="polite"><p class="muted">Memuat berita…</p></div>
+  </div>
+</section>
+
+<!-- ===================== GALERI ===================== -->
+<section class="sec sec--white" id="galeri">
+  <div class="wrap">
+    <h2 class="sec__title">Galeri warga</h2>
+    <div class="gallery" id="galleryList" aria-live="polite"><p class="muted">Memuat galeri…</p></div>
+  </div>
+</section>
+
+<!-- ===================== LAPORAN WARGA ===================== -->
+<section class="sec sec--coral" id="lapor">
+  <div class="wrap lapor">
+    <div class="lapor__text">
+      <h2 class="sec__title sec__title--left">Laporan warga</h2>
+      <p>Ada jalan rusak, lampu mati, sampah menumpuk, atau butuh surat pengantar? Tulis di sini. Pengurus RT akan membaca dan menindaklanjuti laporan Anda.</p>
+      <ul class="ticks ticks--white">
+        <li>Laporan masuk langsung ke dashboard pengurus</li>
+        <li>Status laporan diperbarui: baru, diproses, selesai</li>
+        <li>Untuk keadaan darurat, hubungi nomor telepon di bagian Kontak</li>
+      </ul>
+    </div>
+    <form class="form form--card" id="reportForm" novalidate>
+      <label>Nama lengkap <input name="name" required maxlength="100" autocomplete="name"></label>
+      <label>No. HP / WhatsApp <input name="phone" maxlength="30" inputmode="tel" autocomplete="tel"></label>
+      <label>Kategori
+        <select name="category">
+          <option value="kebersihan">Kebersihan</option>
+          <option value="keamanan">Keamanan</option>
+          <option value="infrastruktur">Jalan & fasilitas</option>
+          <option value="kesehatan">Kesehatan</option>
+          <option value="administrasi">Surat & administrasi</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+      </label>
+      <label>Judul laporan <input name="title" required maxlength="150"></label>
+      <label>Isi laporan <textarea name="message" rows="5" required minlength="10" maxlength="3000" placeholder="Jelaskan kejadian, lokasi, dan waktunya"></textarea></label>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn--indigo" type="submit">Kirim laporan</button>
+      <p class="form__msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== HUBUNGI KAMI ===================== -->
+<section class="sec sec--teal" id="kontak">
+  <div class="wrap">
+    <h2 class="sec__title">Hubungi kami</h2>
+    <div class="kontak">
+      <div class="kontak__info">
+        <ul class="info">
+          <li><span aria-hidden="true">🕗</span><div><strong>Waktu pelayanan</strong><span data-set="jam_layanan"></span></div></li>
+          <li><span aria-hidden="true">📍</span><div><strong>Alamat</strong><span data-set="alamat"></span></div></li>
+          <li><span aria-hidden="true">📞</span><div><strong>Telepon</strong><a id="telLink" href="#" data-set="telepon"></a></div></li>
+          <li><span aria-hidden="true">💬</span><div><strong>WhatsApp</strong><a id="waLink" href="#" target="_blank" rel="noopener" data-set="whatsapp"></a></div></li>
+        </ul>
+        <div class="map" id="mapBox">
+          <!-- Isi link peta dari dashboard admin → Data & Kontak (Google Maps → Bagikan → Sematkan peta) -->
+          <p>Peta belum diatur.<br>Admin dapat menambahkannya di dashboard.</p>
+        </div>
+      </div>
+      <form class="form form--card" id="contactForm" novalidate>
+        <label>Nama <input name="name" required maxlength="100" autocomplete="name"></label>
+        <label>Email <input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+        <label>Judul <input name="subject" maxlength="150"></label>
+        <label>Isi pesan <textarea name="message" rows="5" required maxlength="3000"></textarea></label>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn--coral" type="submit">Kirim pesan</button>
+        <p class="form__msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>© <span id="year"></span> RT 15 / RW 03. Seluruh hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<!-- Modal berita & lightbox galeri -->
+<dialog class="modal" id="newsModal"><div class="modal__body" id="newsModalBody"></div><button class="modal__close" data-close aria-label="Tutup">×</button></dialog>
+<dialog class="modal modal--img" id="lightbox"><figure id="lightboxBody"></figure><button class="modal__close" data-close aria-label="Tutup">×</button></dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
